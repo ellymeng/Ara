@@ -1,4 +1,3 @@
-package edu.georgetown.cs.hoyahacks;
 
 import java.util.Collections;
 import java.util.List;
@@ -6,26 +5,26 @@ import java.util.PriorityQueue;
 import java.util.TreeSet;
 
 public class CalculateScore {
-    public static void main(String[] args) {
-        User p1=new User();
-        p1.setInfo("Doe", "Jenn", "jenn_doe", 2020, "CS");
-        p1.currCourses.add(new Course("COSC", 255, new Professor("Example", "Prof")));
-        p1.currCourses.add(new Course("COSC", 240, new Professor("World", "Hello")));
-        p1.fields.add(new Tag("data"));
-        p1.fields.add(new Tag("cyber"));
-        p1.fields.add(new Tag("who knows"));
-        p1.career.add(new Tag("software engineer"));
-        
-        User p2=new User();
-        p2.setInfo("Lam", "kdg;as", "yepitsme", 2019, "CS");
-        p2.currCourses.add(new Course("COSC", 255, new Professor("Example", "Prof")));
-        p2.currCourses.add(new Course("COSC", 240, new Professor("World", "Hello")));
-        p2.fields.add(new Tag("data"));
-        p2.career.add(new Tag("software engineer"));
-        
-        System.out.println(CalculateScore.score(p1, p2));
-    }
-    
+//    public static void main(String[] args) {
+//        User p1=new User();
+//        p1.setInfo("Doe", "Jenn", "jenn_doe", 2020, "CS");
+//        p1.currCourses.add(new Course("COSC", 255, new Professor("Example", "Prof")));
+//        p1.currCourses.add(new Course("COSC", 240, new Professor("World", "Hello")));
+//        p1.fields.add(new Tag("data"));
+//        p1.fields.add(new Tag("cyber"));
+//        p1.fields.add(new Tag("who knows"));
+//        p1.career.add(new Tag("software engineer"));
+//        
+//        User p2=new User();
+//        p2.setInfo("Lam", "kdg;as", "yepitsme", 2019, "CS");
+//        p2.currCourses.add(new Course("COSC", 255, new Professor("Example", "Prof")));
+//        p2.currCourses.add(new Course("COSC", 240, new Professor("World", "Hello")));
+//        p2.fields.add(new Tag("data"));
+//        p2.career.add(new Tag("software engineer"));
+//        
+//        System.out.println(CalculateScore.score(p1, p2));
+//    }
+//    
     private static int numTagsInCommon(PriorityQueue<Tag> tagList1, PriorityQueue<Tag> tagList2) {
 //        System.out.println(tagList1);
 //        System.out.println(tagList2);
