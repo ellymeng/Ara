@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/picName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <ImageView
+            android:id="@+id/propicImage"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/blankpropic" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="8sp"
+            android:text="Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="bottom"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/schoolYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="School Year"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/majorText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Major"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/majorSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/curPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/curCoursesText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="Current computer science courses:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/curTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TableLayout
+            android:id="@+id/courseTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            -
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/majorInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="subject code (e.g. COSC)"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/courseNumInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="course # (e.g. 255)"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addCourseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32sp"
+                    android:background="@color/colorPrimary"
+                    android:text="Add"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pastPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/pastCoursesText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="Past computer science courses:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pastTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            -
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/majorInput2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="subject code (e.g. COSC)"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/courseNumInput2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="course # (e.g. 255)"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addCourseButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32sp"
+                    android:background="@color/colorPrimary"
+                    android:text="Add"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/specialty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/interestsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CS specializations that interest me:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/specialtyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32sp"
+            android:layout_marginLeft="8sp"
+            android:background="@color/colorPrimary"
+            android:text="Choose"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/job"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/idealJobText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My dream job is:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/jobButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32sp"
+            android:layout_marginLeft="8sp"
+            android:background="@color/colorPrimary"
+            android:text="Choose"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mentor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/lookingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm looking for a:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mentorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32sp"
+            android:layout_marginLeft="8sp"
+            android:background="@color/colorPrimary"
+            android:text="Choose"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hobbiesPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/hobbiesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies, interests, and fun facts about me:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hobbiesEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <EditText
+            android:id="@+id/hobbiesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hometown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/hometownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My hometown:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/hometownInput"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My email:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:background="@color/colorAccent"
+        android:padding="4sp"
+        android:text="Submit"
+        android:textSize="11sp" />
+
+</LinearLayout>

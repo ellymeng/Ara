@@ -1,3 +1,143 @@
-<resources>
+<?xml version="1.0"?>
+
+    <resources>
+
     <string name="app_name">HoyaHacks</string>
+
+
+    <string-array name="year_array">
+
+    <item>2019</item>
+
+    <item>2020</item>
+
+    <item>2021</item>
+
+    <item>2022</item>
+
+    <item/>
+
+</string-array>
+
+
+    <string-array name="majors_array">
+
+    <item>Computer Engineering</item>
+
+    <item>Computer Science</item>
+
+    <item>Computer Programming</item>
+
+    <item>Cybersecurity</item>
+
+    <item>Electrical Engineering</item>
+
+    <item>Information Sciences</item>
+
+    <item>Information Technology</item>
+
+    <item>Management Information Sciences</item>
+
+    <item>Information Security</item>
+
+    <item>Robotics</item>
+
+    <item>Software Engineering</item>
+
+</string-array>
+
+
+    <string-array name="mentor_array">
+
+    <item>Mentor</item>
+
+    <item>Mentee</item>
+
+    <item>Peer</item>
+
+</string-array>
+
+
+    <string-array name="looking_array">
+
+    <item>Mentor</item>
+
+    <item>Robotics</item>
+
+    <item>Software Engineering</item>
+
+</string-array>
+
+
+    <string-array name="jobs_array">
+
+    <item>Computer Hardware Engineer</item>
+
+    <item>Computer Programmer</item>
+
+    <item>Computer Systems Analyst</item>
+
+    <item>Computer Network Architect Engineer</item>
+
+    <item>Database Administrator</item>
+
+    <item>Front End Web Developer</item>
+
+    <item>Full Stack Developer</item>
+
+    <item>Information Security Analyst</item>
+
+    <item>Project Manager</item>
+
+    <item>Quality Assurance Engineer</item>
+
+    <item>Security Analyst</item>
+
+    <item>Software Engineer</item>
+
+    <item>Solutions Engineer</item>
+
+    <item>Technical Consultant</item>
+
+</string-array>
+
+
+    <string-array name="specialties_array">
+
+    <item>Artificial Intelligence</item>
+
+    <item>Computer Architecture and Engineering</item>
+
+    <item>Computer Graphics and Visualization</item>
+
+    <item>Computer Hardware</item>
+
+    <item>Computer Security and Cryptography</item>
+
+    <item>Computer Systems</item>
+
+    <item>Computational Science</item>
+
+    <item>Computer Networks</item>
+
+    <item>Databases and Information Retrieval</item>
+
+    <item>Front End Development</item>
+
+    <item>Health Informatics</item>
+
+    <item>Information Science</item>
+
+    <item>Mobile Development</item>
+
+    <item>Software Engineering</item>
+
+    <item>Concurrent, Parallel and Distributed Systems</item>
+
+    <item>Programming Language Theory</item>
+
+    <item>Theory of Computation</item>
+
+</string-array>
+
 </resources>
