@@ -1,13 +1,11 @@
 
 
 public class Course implements Comparable<Course> {
-    private String dept;
-    private int courseNum;
-    public Professor prof;
+    private String courseName;
+    public String prof;
 
-    public Course(String dept, int courseNum, Professor prof, boolean sem) {
-        this.dept = dept;
-        this.courseNum = courseNum;
+    public Course(String courseName, String prof) {
+        this.courseName=courseName;
         this.prof = prof;
     }
 
@@ -33,10 +31,6 @@ public class Course implements Comparable<Course> {
 
     @Override
     public int compareTo(Course course) {
-        if (!dept.equals(course.dept))
-            return dept.compareTo(course.dept);
-        else
-            return (courseNum<course.courseNum) ? -1 : (courseNum>course.courseNum) ? 1 : 0;
-        
+        return courseName.compareTo(course.courseName);        
     }
 }
