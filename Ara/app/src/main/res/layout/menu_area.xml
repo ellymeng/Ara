@@ -8,19 +8,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Profile" />
+        android:background="@color/colorPrimary"
+        android:text="Profile"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/suggestionsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Suggestions" />
+        android:background="@color/colorPrimary"
+        android:text="Suggestions"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/chatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Chat" />
+        android:background="@color/colorPrimary"
+        android:text="Chat"
+        android:textColor="@android:color/white" />
 </LinearLayout>
