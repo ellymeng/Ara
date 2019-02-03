@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.georgetown.cs.ara.OpenChats">
+
+    <include
+        layout="@layout/menu_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/noUsersText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='Tap on "suggestions" to connect and start chatting!'
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/usersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp" />
+</LinearLayout>
