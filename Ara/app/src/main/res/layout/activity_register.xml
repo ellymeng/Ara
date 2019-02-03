@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:text="\nCreate your Ara account!"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/white"
         android:textSize="36sp" />
 
     <EditText
@@ -29,6 +29,8 @@
         android:maxLines="1"
         android:paddingLeft="16sp"
         android:paddingRight="16sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="24sp" />
 
     <EditText
@@ -42,6 +44,8 @@
         android:maxLines="1"
         android:paddingLeft="16sp"
         android:paddingRight="16sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="24sp" />
 
     <Button
@@ -52,7 +56,7 @@
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         android:text="Register"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
     <TextView
@@ -64,6 +68,7 @@
         android:paddingLeft="16sp"
         android:paddingRight="16sp"
         android:text="Already have an Ara account? Tap here to log in!"
+        android:textColor="@android:color/white"
         android:textSize="20dp" />
 
 </LinearLayout>
