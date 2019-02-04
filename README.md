@@ -6,7 +6,7 @@ You walk into a lecture hall, a conference, or a meeting ... and realize you're 
 We want to do our part to stop this cycle. That's where Ara comes in.
 
 # What is Ara?
-Ara is a social networking/matching app for women in tech majors at the same university. If you've ever wanted to become study buddies with that girl in your computer science class but can't find a socially-viable way to do so, or if you "know of" girls who have gone on to work at amazing companies but never gotten the chance to know them, then Ara is the perfect app to use. Ara reduces such missed opportunities by suggesting students who are "most compatible" with the user. Compatibility is scored based on similarities in coursework, specializations, desired role in mentor relationships, and many other fields.
+Ara is a social networking/matching app for women in tech majors at the same university. If you've ever wanted to become study buddies with that girl in your computer science class but can't find a socially-viable way to do so, or if you "know of" girls who have gone on to work at amazing companies but never gotten the chance to know them, then Ara is the perfect app to use. Ara reduces such missed opportunities by suggesting students who are "most compatible" with the user and providing a chat functionality for exchanging personal contact information. Compatibility is scored based on similarities in coursework, specializations, desired role in mentor relationships, and many other fields. 
 
 # What is Ara built on?
 Ara is built with Java in Android Studio and has a Google FireBase backend.
